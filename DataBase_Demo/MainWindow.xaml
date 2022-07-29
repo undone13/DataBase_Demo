@@ -1,0 +1,48 @@
+﻿<Window x:Class="DataBase_Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBase_Demo"
+        mc:Ignorable="d"
+        Title="Pagina Principala" Height="200" Width="430">
+    <StackPanel>
+        <Label Margin="30, 0, 30, 0">
+            <WrapPanel>
+                <Label x:Name="label_username" Content="Username" Margin="0, 0, 170, 0"/>
+                <Button x:Name="button_check" Content="Check Username" Click="button_check_Click"/>
+            </WrapPanel>
+        </Label>
+        <TextBox x:Name="textbox_username"
+                 Margin="30, 2, 30, 0"
+                 />
+        <Label Margin="30, 10, 30, 0">
+            <WrapPanel>
+                <Label x:Name="label_password" 
+                       Content="Password" 
+                       />
+                <CheckBox x:Name="checkbox_showpass" 
+                          Content="Show Password"
+                          VerticalAlignment="Center"
+                          Margin="160, 0, 0, 0"
+                          Checked="checkbox_showpass_Checked"
+                          />
+
+            </WrapPanel>
+        </Label>
+        <PasswordBox x:Name="passwordbox_password"     
+                 Margin="30, 2, 30, 0"
+               />
+        <WrapPanel>
+                <Button x:Name="button_register" 
+                    Content="Click to register" 
+                    Margin="105, 10, 0, 0" Click="button_register_Click"
+                    />
+                <Button x:Name="button_login"
+                    Content="Click to login"
+                    Margin="45, 10, 30, 0" Click="button_login_Click"
+                    />
+            </WrapPanel>
+
+    </StackPanel>
+</Window>
