@@ -22,7 +22,6 @@ namespace DataBase_Demo
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly parola parola;
 
         string data = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=AppUsers;Integrated Security=True";
         public static int USERID = 0;
@@ -31,8 +30,6 @@ namespace DataBase_Demo
         public MainWindow()
         {
             InitializeComponent();
-            parola = new parola();
-            this.DataContext = parola;
         }
 
         private void button_check_Click(object sender, RoutedEventArgs e)
